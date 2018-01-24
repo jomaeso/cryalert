@@ -1,7 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
-def logging_setup(name, path, maxBytes=2000, backupCount=5, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'):
+def logging_setup(name, path, maxBytes=2000000, backupCount=5, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'):
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
