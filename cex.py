@@ -21,7 +21,7 @@ def main(argv):
     raw_result = r.text
     result = json.loads(raw_result)
 
-    current_price = 1.0
+    current_price = 0.0
 
     for cex_data in result.get("data", []):
         for track in data.get("track", []):
